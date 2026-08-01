@@ -23,12 +23,12 @@ public class ExtentManager {
 
     public static ExtentReports createReport()
     {
-        DateTimeFormatter formatter =
-                DateTimeFormatter.ofPattern("dd-MM-yyyy_HH-mm-ss");
-        String timeStamp = LocalDateTime.now().format(formatter);
+//        DateTimeFormatter formatter =
+//                DateTimeFormatter.ofPattern("dd-MM-yyyy_HH-mm-ss");
+//        String timeStamp = LocalDateTime.now().format(formatter);
 
         logger.info("Creating Extent Report");
-        String reportPath=   "test-output/ExtentReport_"+timeStamp+".html";
+        String reportPath=   "test-output/ExtentReport.html";
 
         ExtentSparkReporter sparkReporter =
                 new ExtentSparkReporter(reportPath);
