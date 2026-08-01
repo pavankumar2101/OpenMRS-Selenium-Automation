@@ -1,0 +1,48 @@
+<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">-->
+
+<!--<suite name="OpenMRS Suite" parallel="classes" thread-count="2">-->
+<!--    -->
+<!--    <listeners>-->
+<!--        <listener class-name="com.openmrs.listeners.TestListener">-->
+<!--            <listener class-name="com.openmrs.listeners.TestListener"/>-->
+<!--            <listener class-name="com.openmrs.retry.RetryTransformer"/>-->
+
+<!--        </listener>-->
+<!--    </listeners>-->
+
+<!--    <test name="OpenMRS Tests">-->
+
+<!--        <classes>-->
+<!--            <class name="com.openmrs.tests.FirstTest"/>-->
+<!--            <class name="com.openmrs.tests.SecondTest"/>-->
+<!--        </classes>-->
+
+<!--    </test>-->
+
+<!--</suite>-->
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="OpenMRS Suite" parallel="classes" thread-count="2">
+
+    <listeners>
+
+        <listener class-name="com.openmrs.listeners.TestListener"/>
+
+        <listener class-name="com.openmrs.retry.RetryTransformer"/>
+
+    </listeners>
+
+    <test name="OpenMRS Tests">
+
+        <classes>
+
+            <class name="com.openmrs.tests.FirstTest"/>
+
+            <class name="com.openmrs.tests.SecondTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
