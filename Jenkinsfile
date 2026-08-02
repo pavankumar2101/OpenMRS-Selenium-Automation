@@ -46,7 +46,6 @@ pipeline {
                 cleanWs()
             }
         }
-
     }
 
     post {
@@ -62,6 +61,5 @@ pipeline {
         failure {
             echo 'OpenMRS Selenium Automation Pipeline failed. Check reports for details.'
         }
-
     }
-
+}
